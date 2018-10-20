@@ -1,0 +1,16 @@
+package com.github.demo02;
+
+public class Plane implements Transport{
+
+	@Override
+	public void calculate(double distance) {
+		// TODO 自动生成的方法存根
+		double time_consume;
+		double price;
+		time_consume =toStationTime+returnTime+getTicketTime+safeCheckTime+waitingTime;
+		price = 0.75*distance;
+		System.out.println("飞机时间消耗为："+time_consume);
+		System.out.println("乘坐飞机总价为："+price);
+	}
+
+}

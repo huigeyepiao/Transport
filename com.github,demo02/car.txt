@@ -1,0 +1,16 @@
+package com.github.demo02;
+
+public class Car implements Transport {
+	
+	@Override
+	public void calculate(double distance) {
+		// TODO 自动生成的方法存根
+		double time_consume;
+		double price;
+		time_consume = toStationTime+returnTime+getTicketTime+safeCheckTime+waitingTime;
+		price = 0.32*distance;
+		System.out.println("汽车时间消耗为："+time_consume);
+		System.out.println("乘坐汽车总价为："+price);
+	}
+	
+}

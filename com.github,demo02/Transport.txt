@@ -1,0 +1,16 @@
+package com.github.demo02;
+
+public interface Transport {
+	public static String transport_name ="";
+	public static double toStationTime = 0;
+	public static double returnTime = 0;
+	public static double getTicketTime = 0;
+	public static double safeCheckTime = 0;
+	public static double waitingTime = 0;
+	public static int speed = 0 ;
+	public static double singlePrice = 0;
+
+	
+	
+	public abstract void calculate(double distance);
+}

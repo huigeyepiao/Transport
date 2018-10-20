@@ -1,0 +1,27 @@
+package com.github.demo02;
+
+import java.util.Scanner;
+
+public class Control {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		double distance = 0;
+		String placeOfDepature = "";
+		String destination = "";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入出发地：");
+		placeOfDepature = sc.next();
+		System.out.println("请输入目的地：");
+		destination = sc.next();
+		System.out.println("请输入距离：");
+		distance = sc.nextDouble();
+		Car car = new Car();
+		car.calculate(distance);
+		HighSpeedRail hs = new HighSpeedRail();
+		hs.calculate(distance);
+		Plane plane = new Plane();
+		plane.calculate(distance);
+	}
+
+}
